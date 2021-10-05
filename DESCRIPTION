@@ -1,0 +1,20 @@
+Type: Compendium
+Package: practBIGrausR2021
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.1
+Authors@R: 
+    person(given = "First",
+           family = "Last",
+           role = c("aut", "cre"),
+           email = "first.last@example.com")
+Description: RNASeq BIGraus 2021
+License: What license it uses
+Depends: 
+    BiocManager,
+    edgeR,
+    factoextra,
+    org.Hs.eg.db,
+    pheatmap,
+    topGO
+Encoding: UTF-8
+LazyData: true
