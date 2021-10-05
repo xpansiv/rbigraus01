@@ -1,4 +1,4 @@
-FROM rocker/binder:3.6.3
+FROM rocker/binder:4.0.2
 LABEL maintainer='Angel Blanco'
 USER root
 COPY . ${HOME}
@@ -7,6 +7,6 @@ USER ${NB_USER}
 
 
 
-RUN wget https://github.com/xpansiv/rbigraus01/raw/main/DESCRIPTION && R -e "options(repos = list(CRAN = 'http://mran.revolutionanalytics.com/snapshot/2020-02-29/')); devtools::install_deps()"
+RUN wget https://github.com/xpansiv/rbigraus01/raw/main/DESCRIPTION && R -e "options(repos = list(CRAN = 'http://mran.revolutionanalytics.com/snapshot/2020-07-16/')); devtools::install_deps()"
 
 RUN rm DESCRIPTION.1; exit 0
