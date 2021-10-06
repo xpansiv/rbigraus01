@@ -3,6 +3,11 @@ LABEL maintainer='Angel Blanco'
 USER root
 COPY . ${HOME}
 RUN chown -R ${NB_USER} ${HOME}
+
+RUN R -e "install.packages('BiocManager')"\
+&& 
+&& R -e "BiocManager::install('ComplexHeatmap')"
+
 USER ${NB_USER}
 
 
