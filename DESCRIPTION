@@ -10,11 +10,7 @@ Authors@R:
 Description: RNASeq BIGraus 2021
 License: What license it uses
 Depends: 
-    BiocManager,
-    edgeR,
     factoextra,
-    org.Hs.eg.db,
     pheatmap,
-    topGO
 Encoding: UTF-8
 LazyData: true
