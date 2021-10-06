@@ -11,6 +11,6 @@ Description: RNASeq BIGraus 2021
 License: What license it uses
 Depends: 
     factoextra,
-    pheatmap,
+    pheatmap
 Encoding: UTF-8
 LazyData: true
